@@ -41,4 +41,17 @@ public class FizzBuzzTest {
         //THEN
         assertEquals("Fizz", actual);
     }
+
+    @Test
+    void fizzBuzzTest_when5_thenReturnBuzz() {
+        //GIVEN
+
+        int number = 5;
+
+        //WHEN
+        String actual = FizzBuzz.fizzBuzz(number);
+
+        //THEN
+        assertEquals("Buzz", actual);
+    }
 }
