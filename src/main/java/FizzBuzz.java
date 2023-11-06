@@ -5,7 +5,16 @@ public class FizzBuzz {
     }
 
 
-    public static int fizzBuzz(int number) {
-        return 1;
+    public static String fizzBuzz(int number) {
+        String result;
+
+        if (number % 3 == 0) {
+            result = "Fizz";
+        }
+        else {
+            return String.valueOf(number);
+        }
+
+        return result;
     }
 }
