@@ -45,7 +45,6 @@ public class FizzBuzzTest {
     @Test
     void fizzBuzzTest_when5_thenReturnBuzz() {
         //GIVEN
-
         int number = 5;
 
         //WHEN
@@ -53,5 +52,17 @@ public class FizzBuzzTest {
 
         //THEN
         assertEquals("Buzz", actual);
+    }
+
+    @Test
+    void fizzBuzzTest_when15_thenReturnFizzBuzz() {
+        //GIVEN
+        int number = 15;
+
+        //WHEN
+        String actual = FizzBuzz.fizzBuzz(number);
+
+        //THEN
+        assertEquals("Fizz Buzz", actual);
     }
 }
